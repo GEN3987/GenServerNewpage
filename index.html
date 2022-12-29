@@ -29,6 +29,26 @@
 </head>
 <body>
 
+<!-- モーダルウィンドウ -->
+<section id="modalArea" class="modalArea">
+  <div id="modalBg" class="modalBg"></div>
+  <div class="modalWrapper">
+    <div class="modalContents">
+      <p class="detail_date">2022.12.29</p>
+      <p class="detail_title">GenServer Official Wikiを更新</p>
+      <p class="detail_text">
+GenServer Official Wikiを更新しました<br>
+Wikiのサイトは<u><a href="https://wiki.genserver.work/">こちら(https://wiki.genserver.work/)</a></u>ぜひご覧ください。<br>
+いろはにほへちりぬるをわかよたれそつねならむうゐのおくやまけふこえてあさきゆめみしゑひもせすんいろはにほへちりぬるをわかよたれそつねならむうゐのおくやまけふこえてあさきゆめみしゑひもせすんいろはにほへちりぬるをわかよたれそつねならむうゐのおくやまけふこえてあさきゆめみしゑひもせすんいろはにほへちりぬるをわかよたれそつねならむうゐのおくやまけふこえてあさきゆめみしゑひもせすんいろはにほへちりぬるをわかよたれそつねならむうゐのおくやまけふこえてあさきゆめみしゑひもせすんいろはにほへちりぬるをわかよたれそつねならむうゐのおくやまけふこえてあさきゆめみしゑひもせすんいろはにほへちりぬるをわかよたれそつねならむうゐのおくやまけふこえてあさきゆめみしゑひもせすんいろはにほへちりぬるをわかよたれそつねならむうゐのおくやまけふこえてあさきゆめみしゑひもせすんいろはにほへちりぬるをわかよたれそつねならむうゐのおくやまけふこえてあさきゆめみしゑひもせすんいろはにほへちりぬるをわかよたれそつねならむうゐのおくやまけふこえてあさきゆめみしゑひもせすんいろはにほへちりぬるをわかよたれそつねならむうゐのおくやまけふこえてあさきゆめみしゑひもせすん
+      </p>
+    </div>
+    <div id="closeModal" class="closeModal">
+<span class="btn-close">
+    </span>
+    </div>
+  </div>
+</section>
+<!-- モーダルウィンドウ -->
 
 <div id="header">
 <h1><a href="https://www.genserver.work/"><img class="logo" src="https://www.genserver.work/img/icon.png" width="56" height="56" alt="GenServer"></a></h1>
@@ -201,6 +221,16 @@
       });
     
     });
+  </script>
+  <script type="text/javascript">
+$(function () {
+  $('#openModal').click(function(){
+      $('#modalArea').fadeIn();
+  });
+  $('#closeModal , #modalBg').click(function(){
+    $('#modalArea').fadeOut();
+  });
+});
   </script>
   <!--  javascript   -->
 
